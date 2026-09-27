@@ -1,0 +1,14 @@
+POWER SHELL
+$busid = "6-1" 
+
+# Bind and attach ESP32 
+usbipd bind --busid $busid 
+usbipd attach --wsl --busid $busid 
+
+
+
+
+
+WSL TERMINAL
+wsl sudo modprobe ftdi_sio
+ls /dev/tty*
