@@ -289,6 +289,16 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/home/aamir/Projects/thermostat/build/esp-idf/esp-idf-lib__esp_idf_lib_helpers/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/aamir/Projects/thermostat/build/esp-idf/esp-idf-lib__dht/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/home/aamir/Projects/thermostat/build/esp-idf/esp_hal_rmt/cmake_install.cmake")
 endif()
 

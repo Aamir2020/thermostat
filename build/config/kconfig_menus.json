@@ -5094,6 +5094,66 @@
                 "children": [
                     {
                         "children": [],
+                        "depends_on": "<choice EXAMPLE_CHIP_TYPE>",
+                        "help": null,
+                        "id": "EXAMPLE_TYPE_DHT11",
+                        "name": "EXAMPLE_TYPE_DHT11",
+                        "range": null,
+                        "title": "DHT11",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "<choice EXAMPLE_CHIP_TYPE>",
+                        "help": null,
+                        "id": "EXAMPLE_TYPE_AM2301",
+                        "name": "EXAMPLE_TYPE_AM2301",
+                        "range": null,
+                        "title": "DHT21/DHT22/AM2301/AM2302/AM2321",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "<choice EXAMPLE_CHIP_TYPE>",
+                        "help": null,
+                        "id": "EXAMPLE_TYPE_SI7021",
+                        "name": "EXAMPLE_TYPE_SI7021",
+                        "range": null,
+                        "title": "Itead Si7021",
+                        "type": "bool"
+                    }
+                ],
+                "depends_on": null,
+                "help": null,
+                "id": "example-configuration-select-chip-type-home-aamir-Projects-thermostat-main-Kconfig.projbuild-5",
+                "name": "EXAMPLE_CHIP_TYPE",
+                "title": "Select chip type",
+                "type": "choice"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": "GPIO number connected to DATA pin",
+                "id": "EXAMPLE_DATA_GPIO",
+                "name": "EXAMPLE_DATA_GPIO",
+                "range": null,
+                "title": "Data GPIO number",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": "Check this option if you don't have external pull-up resistor on data GPIO.\nDHT sensors that come mounted on a PCB generally have pull-up resistors on the data pin.\nBut for stable operation, it is recommended to provide an external pull-up resistor.",
+                "id": "EXAMPLE_INTERNAL_PULLUP",
+                "name": "EXAMPLE_INTERNAL_PULLUP",
+                "range": null,
+                "title": "Enable internal pull-up resistor",
+                "type": "bool"
+            },
+            {
+                "children": [
+                    {
+                        "children": [],
                         "depends_on": "<choice BLINK_LED>",
                         "help": null,
                         "id": "BLINK_LED_GPIO",
@@ -5115,7 +5175,7 @@
                 ],
                 "depends_on": null,
                 "help": "Select the LED type. A normal level controlled LED or an addressable LED strip.\nThe default selection is based on the Espressif DevKit boards.\nYou can change the default selection according to your board.",
-                "id": "example-configuration-blink-led-type-home-aamir-Projects-thermostat-main-Kconfig.projbuild-5",
+                "id": "example-configuration-blink-led-type-home-aamir-Projects-thermostat-main-Kconfig.projbuild-35",
                 "name": "BLINK_LED",
                 "title": "Blink LED type",
                 "type": "choice"
@@ -5145,7 +5205,7 @@
                 ],
                 "depends_on": "BLINK_LED_STRIP",
                 "help": "Select the backend peripheral to drive the LED strip.",
-                "id": "example-configuration-led-strip-backend-peripheral-home-aamir-Projects-thermostat-main-Kconfig.projbuild-19",
+                "id": "example-configuration-led-strip-backend-peripheral-home-aamir-Projects-thermostat-main-Kconfig.projbuild-49",
                 "name": "BLINK_LED_STRIP_BACKEND",
                 "title": "LED strip backend peripheral",
                 "type": "choice"
