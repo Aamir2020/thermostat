@@ -4,3 +4,4 @@ source "/home/aamir/.espressif/v6.1/esp-idf/components/esp_app_format/Kconfig.pr
 source "/home/aamir/.espressif/v6.1/esp-idf/components/esp_rom/Kconfig.projbuild"
 source "/home/aamir/.espressif/v6.1/esp-idf/components/esptool_py/Kconfig.projbuild"
 source "/home/aamir/.espressif/v6.1/esp-idf/components/partition_table/Kconfig.projbuild"
+source "/home/aamir/Projects/thermostat/main/Kconfig.projbuild"

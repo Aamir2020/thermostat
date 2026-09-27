@@ -730,6 +730,24 @@ CONFIG_PARTITION_TABLE_MD5=y
 # end of Partition Table
 
 #
+# Example Configuration
+#
+# default:
+CONFIG_ENV_GPIO_RANGE_MIN=0
+# default:
+CONFIG_ENV_GPIO_RANGE_MAX=39
+# default:
+CONFIG_ENV_GPIO_IN_RANGE_MAX=39
+# default:
+CONFIG_ENV_GPIO_OUT_RANGE_MAX=33
+CONFIG_BLINK_LED_GPIO=y
+# CONFIG_BLINK_LED_STRIP is not set
+CONFIG_BLINK_GPIO=33
+# default:
+CONFIG_BLINK_PERIOD=1000
+# end of Example Configuration
+
+#
 # Compiler options
 #
 # default:
@@ -850,6 +868,40 @@ CONFIG_ESP_ERR_TO_NAME_LOOKUP=y
 # default:
 # CONFIG_GPIO_CTRL_FUNC_IN_IRAM is not set
 # end of ESP-Driver:GPIO Configurations
+
+#
+# ESP-Driver:RMT Configurations
+#
+# default:
+CONFIG_RMT_ENCODER_FUNC_IN_IRAM=y
+# default:
+CONFIG_RMT_TX_ISR_HANDLER_IN_IRAM=y
+# default:
+CONFIG_RMT_RX_ISR_HANDLER_IN_IRAM=y
+# default:
+# CONFIG_RMT_RECV_FUNC_IN_IRAM is not set
+# default:
+# CONFIG_RMT_TX_ISR_CACHE_SAFE is not set
+# default:
+# CONFIG_RMT_RX_ISR_CACHE_SAFE is not set
+# default:
+CONFIG_RMT_OBJ_CACHE_SAFE=y
+# default:
+# CONFIG_RMT_ENABLE_DEBUG_LOG is not set
+# default:
+# CONFIG_RMT_ISR_IRAM_SAFE is not set
+# end of ESP-Driver:RMT Configurations
+
+#
+# ESP-Driver:SPI Configurations
+#
+# default:
+CONFIG_SPI_MASTER_ISR_IN_IRAM=y
+# default:
+# CONFIG_SPI_SLAVE_IN_IRAM is not set
+# default:
+CONFIG_SPI_SLAVE_ISR_IN_IRAM=y
+# end of ESP-Driver:SPI Configurations
 
 #
 # Hardware Settings
@@ -1024,6 +1076,8 @@ CONFIG_ESP_BROWNOUT_USE_INTR=y
 # end of Power Supplier
 
 # default:
+CONFIG_ESP_SPI_BUS_LOCK_ISR_FUNCS_IN_IRAM=y
+# default:
 CONFIG_ESP_INTR_IN_IRAM=y
 # end of Hardware Settings
 
@@ -1072,6 +1126,13 @@ CONFIG_LIBC_ASSERT_BUFFER_SIZE=200
 # default:
 # CONFIG_PM_SLP_IRAM_OPT is not set
 # end of Power Management
+
+#
+# ESP PSRAM
+#
+# default:
+# CONFIG_SPIRAM is not set
+# end of ESP PSRAM
 
 #
 # ESP-ROM
@@ -2046,6 +2107,8 @@ CONFIG_ESP32_TIME_SYSCALL_USE_RTC_FRC1=y
 # CONFIG_ESP32_TIME_SYSCALL_USE_FRC1 is not set
 # CONFIG_NEWLIB_TIME_SYSCALL_USE_NONE is not set
 # CONFIG_ESP32_TIME_SYSCALL_USE_NONE is not set
+# CONFIG_SPIRAM_SUPPORT is not set
+# CONFIG_ESP32_SPIRAM_SUPPORT is not set
 CONFIG_CONSOLE_UART_DEFAULT=y
 # CONFIG_CONSOLE_UART_CUSTOM is not set
 # CONFIG_CONSOLE_UART_NONE is not set

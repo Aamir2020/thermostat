@@ -1,4 +1,0 @@
-Command: cmake -G Ninja -B /home/aamir/Projects/thermostat/build -DPYTHON_DEPS_CHECKED=1 -DPYTHON=/home/aamir/.espressif/tools/python/v6.1/venv/bin/python -DESP_PLATFORM=1 -DIDF_TARGET=esp32 -DCCACHE_ENABLE=False /home/aamir/Projects/thermostat
-NOTE: Kconfig parser version: 1
-NOTE: Kconfig defaults policy: use sdkconfig
-NOTE: Status: Finished successfully

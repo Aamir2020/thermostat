@@ -82,4 +82,14 @@
 /home/aamir/Projects/thermostat/build/esp-idf/esp_libc/libesp_libc.a
 /home/aamir/Projects/thermostat/build/esp-idf/pthread/libpthread.a
 /home/aamir/Projects/thermostat/build/esp-idf/cxx/libcxx.a
+/home/aamir/Projects/thermostat/build/esp-idf/esp_hal_rmt/libesp_hal_rmt.a
+/home/aamir/Projects/thermostat/build/esp-idf/esp_driver_rmt/libesp_driver_rmt.a
+/home/aamir/Projects/thermostat/build/esp-idf/esp_hal_rmt/libesp_hal_rmt.a
+/home/aamir/Projects/thermostat/build/esp-idf/esp_psram/libesp_psram.a
+/home/aamir/Projects/thermostat/build/esp-idf/esp_driver_spi/libesp_driver_spi.a
+/home/aamir/Projects/thermostat/build/esp-idf/esp_psram/libesp_psram.a
+/home/aamir/Projects/thermostat/build/esp-idf/espressif__led_strip/libespressif__led_strip.a
+/home/aamir/Projects/thermostat/build/esp-idf/esp_driver_rmt/libesp_driver_rmt.a
+/home/aamir/Projects/thermostat/build/esp-idf/esp_driver_spi/libesp_driver_spi.a
 /home/aamir/Projects/thermostat/build/esp-idf/main/libmain.a
+/home/aamir/Projects/thermostat/build/esp-idf/espressif__led_strip/libespressif__led_strip.a

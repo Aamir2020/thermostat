@@ -22,4 +22,4 @@ set confirm off
 set confirm on
 
 # Load application symbols
-file /home/aamir/Projects/thermostat/build/hello_world.elf
+file /home/aamir/Projects/thermostat/build/blink.elf

@@ -1,15 +1,15 @@
 {
     "version":            "1.3",
-    "project_name":       "hello_world",
-    "project_version":    "1",
+    "project_name":       "blink",
+    "project_version":    "32f7951-dirty",
     "project_path":       "/home/aamir/Projects/thermostat",
     "idf_path":           "/home/aamir/.espressif/v6.1/esp-idf",
     "build_dir":          "/home/aamir/Projects/thermostat/build",
     "config_file":        "/home/aamir/Projects/thermostat/sdkconfig",
-    "config_defaults":    "",
+    "config_defaults":    "/home/aamir/Projects/thermostat/sdkconfig.defaults",
     "bootloader_elf":     "/home/aamir/Projects/thermostat/build/bootloader/bootloader.elf",
-    "app_elf":            "hello_world.elf",
-    "app_bin":            "hello_world.bin",
+    "app_elf":            "blink.elf",
+    "app_bin":            "blink.bin",
     "build_type":         "flash_app",
     "git_revision":       "v6.1",
     "target":             "esp32",
@@ -21,12 +21,12 @@
     "monitor_toolprefix": "xtensa-esp32-elf-",
     "c_compiler":         "/home/aamir/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc",
     "config_environment" : {
-        "COMPONENT_KCONFIGS" : "/home/aamir/.espressif/v6.1/esp-idf/components/efuse/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/esp_common/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/esp_driver_dma/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/esp_driver_gpio/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/esp_hw_support/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/esp_libc/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/esp_mm/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/esp_partition/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/esp_pm/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/esp_rom/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/esp_security/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/esp_stdio/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/esp_system/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/esp_timer/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/freertos/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/hal/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/heap/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/log/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/mbedtls/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/pthread/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/soc/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/spi_flash/Kconfig",
-        "COMPONENT_KCONFIGS_PROJBUILD" : "/home/aamir/.espressif/v6.1/esp-idf/components/app_update/Kconfig.projbuild;/home/aamir/.espressif/v6.1/esp-idf/components/bootloader/Kconfig.projbuild;/home/aamir/.espressif/v6.1/esp-idf/components/esp_app_format/Kconfig.projbuild;/home/aamir/.espressif/v6.1/esp-idf/components/esp_rom/Kconfig.projbuild;/home/aamir/.espressif/v6.1/esp-idf/components/esptool_py/Kconfig.projbuild;/home/aamir/.espressif/v6.1/esp-idf/components/partition_table/Kconfig.projbuild"
+        "COMPONENT_KCONFIGS" : "/home/aamir/.espressif/v6.1/esp-idf/components/efuse/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/esp_common/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/esp_driver_bitscrambler/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/esp_driver_dma/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/esp_driver_gpio/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/esp_driver_rmt/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/esp_driver_spi/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/esp_hw_support/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/esp_libc/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/esp_mm/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/esp_partition/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/esp_pm/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/esp_psram/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/esp_rom/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/esp_security/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/esp_stdio/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/esp_system/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/esp_timer/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/freertos/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/hal/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/heap/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/log/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/mbedtls/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/pthread/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/soc/Kconfig;/home/aamir/.espressif/v6.1/esp-idf/components/spi_flash/Kconfig",
+        "COMPONENT_KCONFIGS_PROJBUILD" : "/home/aamir/.espressif/v6.1/esp-idf/components/app_update/Kconfig.projbuild;/home/aamir/.espressif/v6.1/esp-idf/components/bootloader/Kconfig.projbuild;/home/aamir/.espressif/v6.1/esp-idf/components/esp_app_format/Kconfig.projbuild;/home/aamir/.espressif/v6.1/esp-idf/components/esp_rom/Kconfig.projbuild;/home/aamir/.espressif/v6.1/esp-idf/components/esptool_py/Kconfig.projbuild;/home/aamir/.espressif/v6.1/esp-idf/components/partition_table/Kconfig.projbuild;/home/aamir/Projects/thermostat/main/Kconfig.projbuild"
     },
     "common_component_reqs": [ "cxx", "esp_libc", "freertos", "esp_hw_support", "heap", "log", "soc", "hal", "esp_rom", "esp_common", "esp_system", "esp_stdio", "xtensa" ],
-    "build_components" : [ "app_update", "bootloader", "bootloader_support", "cxx", "efuse", "esp_app_format", "esp_blockdev", "esp_bootloader_format", "esp_common", "esp_driver_dma", "esp_driver_gpio", "esp_hal_ana_conv", "esp_hal_clock", "esp_hal_dma", "esp_hal_gpio", "esp_hal_gpspi", "esp_hal_i2s", "esp_hal_mspi", "esp_hal_pmu", "esp_hal_regi2c", "esp_hal_rtc_timer", "esp_hal_security", "esp_hal_systimer", "esp_hal_timg", "esp_hal_touch_sens", "esp_hal_uart", "esp_hal_usb", "esp_hal_wdt", "esp_hw_support", "esp_libc", "esp_mm", "esp_partition", "esp_pm", "esp_rom", "esp_security", "esp_stdio", "esp_system", "esp_timer", "esp_usb_cdc_rom_console", "esptool_py", "freertos", "hal", "heap", "log", "main", "mbedtls", "partition_table", "pthread", "soc", "spi_flash", "xtensa", "" ],
-    "build_component_paths" : [ "/home/aamir/.espressif/v6.1/esp-idf/components/app_update", "/home/aamir/.espressif/v6.1/esp-idf/components/bootloader", "/home/aamir/.espressif/v6.1/esp-idf/components/bootloader_support", "/home/aamir/.espressif/v6.1/esp-idf/components/cxx", "/home/aamir/.espressif/v6.1/esp-idf/components/efuse", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_app_format", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_blockdev", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_bootloader_format", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_common", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_driver_dma", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_driver_gpio", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_ana_conv", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_clock", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_dma", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_gpio", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_gpspi", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_i2s", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_mspi", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_pmu", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_regi2c", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_rtc_timer", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_security", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_systimer", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_timg", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_touch_sens", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_uart", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_usb", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_wdt", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hw_support", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_libc", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_mm", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_partition", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_pm", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_rom", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_security", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_stdio", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_system", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_timer", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_usb_cdc_rom_console", "/home/aamir/.espressif/v6.1/esp-idf/components/esptool_py", "/home/aamir/.espressif/v6.1/esp-idf/components/freertos", "/home/aamir/.espressif/v6.1/esp-idf/components/hal", "/home/aamir/.espressif/v6.1/esp-idf/components/heap", "/home/aamir/.espressif/v6.1/esp-idf/components/log", "/home/aamir/Projects/thermostat/main", "/home/aamir/.espressif/v6.1/esp-idf/components/mbedtls", "/home/aamir/.espressif/v6.1/esp-idf/components/partition_table", "/home/aamir/.espressif/v6.1/esp-idf/components/pthread", "/home/aamir/.espressif/v6.1/esp-idf/components/soc", "/home/aamir/.espressif/v6.1/esp-idf/components/spi_flash", "/home/aamir/.espressif/v6.1/esp-idf/components/xtensa", "" ],
+    "build_components" : [ "app_update", "bootloader", "bootloader_support", "cxx", "efuse", "esp_app_format", "esp_blockdev", "esp_bootloader_format", "esp_common", "esp_driver_bitscrambler", "esp_driver_dma", "esp_driver_gpio", "esp_driver_rmt", "esp_driver_spi", "esp_hal_ana_conv", "esp_hal_clock", "esp_hal_dma", "esp_hal_gpio", "esp_hal_gpspi", "esp_hal_i2s", "esp_hal_mspi", "esp_hal_pmu", "esp_hal_regi2c", "esp_hal_rmt", "esp_hal_rtc_timer", "esp_hal_security", "esp_hal_systimer", "esp_hal_timg", "esp_hal_touch_sens", "esp_hal_uart", "esp_hal_usb", "esp_hal_wdt", "esp_hw_support", "esp_libc", "esp_mm", "esp_partition", "esp_pm", "esp_psram", "esp_rom", "esp_security", "esp_stdio", "esp_system", "esp_timer", "esp_usb_cdc_rom_console", "espressif__led_strip", "esptool_py", "freertos", "hal", "heap", "log", "main", "mbedtls", "partition_table", "pthread", "soc", "spi_flash", "xtensa", "" ],
+    "build_component_paths" : [ "/home/aamir/.espressif/v6.1/esp-idf/components/app_update", "/home/aamir/.espressif/v6.1/esp-idf/components/bootloader", "/home/aamir/.espressif/v6.1/esp-idf/components/bootloader_support", "/home/aamir/.espressif/v6.1/esp-idf/components/cxx", "/home/aamir/.espressif/v6.1/esp-idf/components/efuse", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_app_format", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_blockdev", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_bootloader_format", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_common", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_driver_bitscrambler", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_driver_dma", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_driver_gpio", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_driver_rmt", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_driver_spi", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_ana_conv", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_clock", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_dma", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_gpio", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_gpspi", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_i2s", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_mspi", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_pmu", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_regi2c", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_rmt", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_rtc_timer", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_security", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_systimer", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_timg", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_touch_sens", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_uart", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_usb", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_wdt", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hw_support", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_libc", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_mm", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_partition", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_pm", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_psram", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_rom", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_security", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_stdio", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_system", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_timer", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_usb_cdc_rom_console", "/home/aamir/Projects/thermostat/managed_components/espressif__led_strip", "/home/aamir/.espressif/v6.1/esp-idf/components/esptool_py", "/home/aamir/.espressif/v6.1/esp-idf/components/freertos", "/home/aamir/.espressif/v6.1/esp-idf/components/hal", "/home/aamir/.espressif/v6.1/esp-idf/components/heap", "/home/aamir/.espressif/v6.1/esp-idf/components/log", "/home/aamir/Projects/thermostat/main", "/home/aamir/.espressif/v6.1/esp-idf/components/mbedtls", "/home/aamir/.espressif/v6.1/esp-idf/components/partition_table", "/home/aamir/.espressif/v6.1/esp-idf/components/pthread", "/home/aamir/.espressif/v6.1/esp-idf/components/soc", "/home/aamir/.espressif/v6.1/esp-idf/components/spi_flash", "/home/aamir/.espressif/v6.1/esp-idf/components/xtensa", "" ],
     "build_component_info" : {
         "app_update": {
             "alias": "idf::app_update",
@@ -163,6 +163,21 @@
             "sources": [ "/home/aamir/.espressif/v6.1/esp-idf/components/esp_common/src/esp_err_to_name.c" ],
             "include_dirs": [ "include" ]
         },
+        "esp_driver_bitscrambler": {
+            "alias": "idf::esp_driver_bitscrambler",
+            "target": "___idf_esp_driver_bitscrambler",
+            "prefix": "idf",
+            "dir": "/home/aamir/.espressif/v6.1/esp-idf/components/esp_driver_bitscrambler",
+            "type": "CONFIG_ONLY",
+            "lib": "__idf_esp_driver_bitscrambler",
+            "reqs": [ "esp_hal_dma" ],
+            "priv_reqs": [ "esp_mm", "esp_driver_dma" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "",
+            "sources": [],
+            "include_dirs": [ "include" ]
+        },
         "esp_driver_dma": {
             "alias": "idf::esp_driver_dma",
             "target": "___idf_esp_driver_dma",
@@ -191,6 +206,36 @@
             "managed_priv_reqs": [],
             "file": "/home/aamir/Projects/thermostat/build/esp-idf/esp_driver_gpio/libesp_driver_gpio.a",
             "sources": [ "/home/aamir/.espressif/v6.1/esp-idf/components/esp_driver_gpio/src/gpio.c", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_driver_gpio/src/gpio_glitch_filter_ops.c", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_driver_gpio/src/rtc_io.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "esp_driver_rmt": {
+            "alias": "idf::esp_driver_rmt",
+            "target": "___idf_esp_driver_rmt",
+            "prefix": "idf",
+            "dir": "/home/aamir/.espressif/v6.1/esp-idf/components/esp_driver_rmt",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_driver_rmt",
+            "reqs": [ "esp_hal_rmt" ],
+            "priv_reqs": [ "esp_pm", "esp_driver_gpio", "esp_driver_bitscrambler", "esp_mm", "esp_driver_dma" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/aamir/Projects/thermostat/build/esp-idf/esp_driver_rmt/libesp_driver_rmt.a",
+            "sources": [ "/home/aamir/.espressif/v6.1/esp-idf/components/esp_driver_rmt/src/rmt_common.c", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_driver_rmt/src/rmt_encoder.c", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_driver_rmt/src/rmt_encoder_bytes.c", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_driver_rmt/src/rmt_encoder_copy.c", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_driver_rmt/src/rmt_encoder_simple.c", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_driver_rmt/src/rmt_rx.c", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_driver_rmt/src/rmt_tx.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "esp_driver_spi": {
+            "alias": "idf::esp_driver_spi",
+            "target": "___idf_esp_driver_spi",
+            "prefix": "idf",
+            "dir": "/home/aamir/.espressif/v6.1/esp-idf/components/esp_driver_spi",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_driver_spi",
+            "reqs": [ "esp_pm", "esp_hal_gpspi", "esp_driver_dma" ],
+            "priv_reqs": [ "esp_timer", "esp_mm", "esp_driver_gpio", "spi_flash", "esp_psram" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/aamir/Projects/thermostat/build/esp-idf/esp_driver_spi/libesp_driver_spi.a",
+            "sources": [ "/home/aamir/.espressif/v6.1/esp-idf/components/esp_driver_spi/src/gpspi/spi_common.c", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_driver_spi/src/gpspi/spi_slave.c", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_driver_spi/src/gpspi/spi_dma.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_hal_ana_conv": {
@@ -326,6 +371,21 @@
             "managed_priv_reqs": [],
             "file": "",
             "sources": [],
+            "include_dirs": [ "include", "esp32/include" ]
+        },
+        "esp_hal_rmt": {
+            "alias": "idf::esp_hal_rmt",
+            "target": "___idf_esp_hal_rmt",
+            "prefix": "idf",
+            "dir": "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_rmt",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_hal_rmt",
+            "reqs": [ "soc", "hal" ],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/aamir/Projects/thermostat/build/esp-idf/esp_hal_rmt/libesp_hal_rmt.a",
+            "sources": [ "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_rmt/rmt_hal.c", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_hal_rmt/esp32/rmt_periph.c" ],
             "include_dirs": [ "include", "esp32/include" ]
         },
         "esp_hal_rtc_timer": {
@@ -523,6 +583,21 @@
             "sources": [ "/home/aamir/.espressif/v6.1/esp-idf/components/esp_pm/pm_locks.c", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_pm/pm_trace.c", "/home/aamir/.espressif/v6.1/esp-idf/components/esp_pm/pm_impl.c" ],
             "include_dirs": [ "include" ]
         },
+        "esp_psram": {
+            "alias": "idf::esp_psram",
+            "target": "___idf_esp_psram",
+            "prefix": "idf",
+            "dir": "/home/aamir/.espressif/v6.1/esp-idf/components/esp_psram",
+            "type": "LIBRARY",
+            "lib": "__idf_esp_psram",
+            "reqs": [],
+            "priv_reqs": [ "heap", "spi_flash", "esp_mm", "esp_hal_mspi", "esp_hal_gpio", "bootloader_support", "esp_driver_gpio" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/aamir/Projects/thermostat/build/esp-idf/esp_psram/libesp_psram.a",
+            "sources": [ "/home/aamir/.espressif/v6.1/esp-idf/components/esp_psram/system_layer/esp_psram_mspi.c" ],
+            "include_dirs": [ "include", "device/include" ]
+        },
         "esp_rom": {
             "alias": "idf::esp_rom",
             "target": "___idf_esp_rom",
@@ -613,6 +688,21 @@
             "sources": [],
             "include_dirs": [ "include" ]
         },
+        "espressif__led_strip": {
+            "alias": "idf::espressif__led_strip",
+            "target": "___idf_espressif__led_strip",
+            "prefix": "idf",
+            "dir": "/home/aamir/Projects/thermostat/managed_components/espressif__led_strip",
+            "type": "LIBRARY",
+            "lib": "__idf_espressif__led_strip",
+            "reqs": [ "esp_driver_rmt", "esp_driver_spi" ],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/aamir/Projects/thermostat/build/esp-idf/espressif__led_strip/libespressif__led_strip.a",
+            "sources": [ "/home/aamir/Projects/thermostat/managed_components/espressif__led_strip/src/led_strip_api.c", "/home/aamir/Projects/thermostat/managed_components/espressif__led_strip/src/led_strip_rmt_dev.c", "/home/aamir/Projects/thermostat/managed_components/espressif__led_strip/src/led_strip_rmt_encoder.c", "/home/aamir/Projects/thermostat/managed_components/espressif__led_strip/src/led_strip_spi_dev.c" ],
+            "include_dirs": [ "include", "interface" ]
+        },
         "esptool_py": {
             "alias": "idf::esptool_py",
             "target": "___idf_esptool_py",
@@ -696,12 +786,12 @@
             "type": "LIBRARY",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "spi_flash" ],
+            "priv_reqs": [ "espressif__led_strip" ],
             "managed_reqs": [],
-            "managed_priv_reqs": [],
+            "managed_priv_reqs": [ "espressif__led_strip" ],
             "file": "/home/aamir/Projects/thermostat/build/esp-idf/main/libmain.a",
-            "sources": [ "/home/aamir/Projects/thermostat/main/hello_world_main.c" ],
-            "include_dirs": []
+            "sources": [ "/home/aamir/Projects/thermostat/main/blink_example_main.c" ],
+            "include_dirs": [ "." ]
         },
         "mbedtls": {
             "alias": "idf::mbedtls",
@@ -2701,10 +2791,23 @@
             "source": "project_components",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "spi_flash" ],
+            "priv_reqs": [ "espressif__led_strip" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [ "espressif__led_strip" ],
+            "include_dirs": [ "." ]
+        },
+        "espressif__led_strip": {
+            "alias": "idf::espressif__led_strip",
+            "target": "___idf_espressif__led_strip",
+            "prefix": "idf",
+            "dir": "/home/aamir/Projects/thermostat/managed_components/espressif__led_strip",
+            "source": "project_managed_components",
+            "lib": "__idf_espressif__led_strip",
+            "reqs": [ "esp_driver_rmt", "esp_driver_spi" ],
+            "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": []
+            "include_dirs": [ "include", "interface" ]
         }
     },
     "gdbinit_files": {
