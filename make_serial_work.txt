@@ -1,0 +1,13 @@
+POWER SHELL
+$busid = "6-1" 
+usbipd bind --busid $busid 
+usbipd attach --wsl --busid $busid 
+
+
+
+
+
+WSL TERMINAL
+sudo modprobe ftdi_sio
+sudo chmod 666 /dev/ttyUSB0
+ls /dev/tty*
